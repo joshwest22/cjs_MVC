@@ -1,27 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.AdderController">
+<BorderPane prefHeight="200.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.AdderController">
    <center>
-      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="200.0" prefWidth="500.0" BorderPane.alignment="CENTER">
          <children>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Label fx:id="firstNumLabel" text="First Number" />
-                  <TextField />
-                  <Label fx:id="secondNumLabel" text="Second Number" />
-                  <TextField />
-                  <Button mnemonicParsing="false" onAction="#onClickAdd" text="Add" />
+                  <Label fx:id="firstNumLabel" text="First Number">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin></Label>
+                  <TextField fx:id="firstNumberField" prefWidth="50.0" />
+                  <Label fx:id="secondNumLabel" text="Second Number">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin></Label>
+                  <TextField fx:id="secondNumberField" prefWidth="50.0" />
+                  <Button mnemonicParsing="false" onAction="#onClickAdd" text="Add">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin></Button>
                </children>
             </HBox>
-            <Label text="Result: " />
-            <Label fx:id="resultValLabel" text="Label" />
+            <Label text="Result: ">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Label fx:id="resultValLabel" text="Label">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
          </children>
       </VBox>
    </center>
