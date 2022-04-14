@@ -22,7 +22,7 @@
                      <HBox.margin>
                         <Insets left="20.0" />
                      </HBox.margin></Label>
-                  <TextField fx:id="firstNumberField" prefWidth="50.0" />
+                  <TextField id="firstNumberTextField" fx:id="firstNumberField" prefWidth="50.0" />
                   <Label fx:id="secondNumLabel" text="Second Number">
                      <font>
                         <Font size="16.0" />
@@ -30,8 +30,8 @@
                      <HBox.margin>
                         <Insets left="20.0" />
                      </HBox.margin></Label>
-                  <TextField fx:id="secondNumberField" prefWidth="50.0" />
-                  <Button mnemonicParsing="false" onAction="#onClickAdd" text="Add">
+                  <TextField id="secondNumberTextField" fx:id="secondNumberField" prefWidth="50.0" />
+                  <Button id="addingButton" mnemonicParsing="false" onAction="#onClickAdd" text="Add">
                      <font>
                         <Font size="16.0" />
                      </font>
@@ -47,7 +47,7 @@
                <font>
                   <Font size="24.0" />
                </font></Label>
-            <Label fx:id="resultValLabel" text="Label">
+            <Label id="resultLabel" fx:id="resultValLabel" text="Label">
                <VBox.margin>
                   <Insets left="20.0" />
                </VBox.margin>
