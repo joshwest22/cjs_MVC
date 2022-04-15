@@ -31,7 +31,7 @@
                         <Insets left="20.0" />
                      </HBox.margin></Label>
                   <TextField fx:id="secondNumberField" prefWidth="50.0" />
-                  <Button mnemonicParsing="false" onAction="#onClickAdd" text="Add">
+                  <Button id="addingButton" mnemonicParsing="false" onAction="#onClickAdd" text="Add">
                      <font>
                         <Font size="16.0" />
                      </font>
